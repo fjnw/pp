@@ -1,16 +1,20 @@
 body {
-  background: black;
+  /* background: black; */
 }
 
 .navbar {
-  background: none !important;
+  z-index: 3;
+  opacity: 0;
+  background: black;
+  border-bottom: .1px solid grey;
 }
 
 header .navbar {
-  z-index: 3;
+  /* z-index: 3; */
   /* background: white !important; */
 }
 
+/* home - video */
 .video-header {
   position: relative;
   background-color: black;
@@ -20,7 +24,7 @@ header .navbar {
   overflow: hidden;
 }
   
-  .video-header video {
+.video-header video {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -50,3 +54,31 @@ header .navbar {
   position: relative;
   z-index: 2;
 }
+
+/* home - boxes */
+.box {
+  width: 250px;
+  height: 250px;
+  border: none;
+  color: white;
+  background: black;
+}
+
+.box-overlay:hover {
+  color: black;
+  background: white;
+}
+
+.box-text {
+}
+
+.project {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+.pastel {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+
