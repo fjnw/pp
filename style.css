@@ -55,23 +55,6 @@ header .navbar {
   z-index: 2;
 }
 
-/* home - boxes */
-.box {
-  width: 250px;
-  height: 250px;
-  border: none;
-  color: white;
-  background: black;
-}
-
-.box-overlay:hover {
-  color: black;
-  background: white;
-}
-
-.box-text {
-}
-
 .project {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
@@ -82,3 +65,46 @@ header .navbar {
 }
 
 
+.letters {
+  width: 20%;
+  height: 0;
+  padding-bottom: 20%;
+  float: left;
+  position: relative;
+  font-family: 'Lato'; 
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  background: black;
+}
+
+.letters:hover {
+  color: black;
+  background: white;
+}
+
+/* home - boxes */
+.box {
+  width: 250px;
+  height: 250px;
+  height: 300px;
+  border: none;
+  color: white;
+  background: black;
+}
+
+.box-overlay:hover {
+  color: black;
+  background: white;
+}
+
+.flex-equal > * {
+  -ms-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
