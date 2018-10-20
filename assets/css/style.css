@@ -9,6 +9,15 @@ body {
   border-bottom: .1px solid grey;
 }
 
+.project {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 700;
+}
+.pastel {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 300;
+}
+
 .video-header {
   position: relative;
   background-color: black;
@@ -17,7 +26,6 @@ body {
   width: 100%;
   overflow: hidden;
 }
-  
 .video-header video {
   position: absolute;
   top: 50%;
@@ -32,7 +40,6 @@ body {
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
-  
  .video-overlay {
   position: absolute;
   top: 0;
@@ -43,19 +50,9 @@ body {
   opacity: 0.5;
   z-index: 1;
 }
-  
 .video-text {
   position: relative;
   z-index: 2;
-}
-
-.project {
-  font-family: 'Dosis', sans-serif;
-  font-weight: 700;
-}
-.pastel {
-  font-family: 'Dosis', sans-serif;
-  font-weight: 300;
 }
 
 .letters {
@@ -73,7 +70,6 @@ body {
   background: black;
   user-select: none;
 }
-
 .letters:hover {
   transition: linear .6s;
     /* transition: background 1s; */
@@ -222,7 +218,6 @@ body {
   filter: blur(24px);
   opacity: 0.9;
 }
-
 @keyframes shadow {
   0% {
     background-position: 0 0;
