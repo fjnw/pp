@@ -5,14 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- font -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:100&text=MXI" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Dosis:300,700&text=ProjectPastel" rel="stylesheet">
-
-
     <!-- stylesheets -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:300,700|Lato:100&text=Project%20Pastel%20M%20X%20I" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="shortcut icon" href="#" />
 
     <title>Project Pastel</title>
   </head>
@@ -69,30 +66,30 @@
         <div class="col-lg-4">
           <!-- <div class="card mt-5"> -->
           <div class="card my-5">
-              <img class="card-img-top mx-auto" src="assets/media/puzzle.jpeg">
+              <img class="card-img-top mx-auto" src="assets/media/puzzle.jpg">
               <div class="card-body mx-auto">
                   <h3>Right Solutions</h3>
-                  <p class="lead mb-0">It's essential to </p>
+                  <p class="lead mb-0">We let the problem define the solution that fits.</p>
               </div>
           </div>
         </div>
         <div class="col-lg-4">
           <!-- <div class="card mt-5"> -->
           <div class="card my-5">
-            <img class="card-img-top mx-auto" src="assets/media/chess.jpeg">
+            <img class="card-img-top mx-auto" src="assets/media/chess.jpg">
             <div class="card-body mx-auto">
                 <h3>Right Support</h3>
-                <p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
+                <p class="lead mb-0">Allow yourself to trust a team that always has you back.</p>
             </div>
           </div>
         </div>
         <div class="col-lg-4">
           <!-- <div class="card mt-5"> -->
           <div class="card my-5">
-            <img class="card-img-top mx-auto" src="assets/media/cube.jpeg">
+            <img class="card-img-top mx-auto" src="assets/media/cube.jpg">
             <div class="card-body mx-auto">
                 <h3>Right Methods</h3>
-                <p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
+                <p class="lead mb-0">We recognize well done is better than well said.</p>
             </div>
           </div>
         </div>
@@ -119,20 +116,18 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script>
-      document.addEventListener('DOMContentLoaded', function(){ 
-
-        window.addEventListener('scroll', function(e) {
-          document.getElementById("scroll").style.opacity = "" + document.documentElement.scrollTop / 300 + "";
-        });  
-
-        function resize() {
+        function letterResize() {
           $('.letters').css({'font-size': $('.letters').innerHeight()});
           $('.letters').css({'line-height': $('.letters').innerHeight() + "px"});
         }
+        letterResize();
+        window.addEventListener('resize', letterResize);
 
-        resize(); 
-        window.addEventListener('resize', resize);
-      })
+        $(window).scroll(function(event) {
+          let scroll = $(this).scrollTop();
+          let opacity = (scroll / 300) - .3;
+          $('.navbar').css('opacity', opacity);
+        });
     </script>
 
   </body>

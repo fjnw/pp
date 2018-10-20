@@ -1,5 +1,5 @@
 body {
-  user-select: none;
+  /* user-select: none; */
 }
 
 .navbar {
@@ -78,6 +78,7 @@ body {
 
 .card {
   border: none;
+  user-select: none;
 }
 .card-body {
   max-width: 20em;
@@ -99,6 +100,7 @@ body {
 .block {
   position: relative;
   background: linear-gradient(0deg, #000, #262626);
+  user-select: none;
 }
 .shadow:before, .shadow:after {
   content: '';
