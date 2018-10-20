@@ -1,5 +1,5 @@
 body {
-
+  user-select: none;
 }
 
 .navbar {
@@ -68,7 +68,6 @@ body {
   /* transition: linear background .75s; */
   color: white;
   background: black;
-  user-select: none;
 }
 .letters:hover {
   transition: linear .6s;
