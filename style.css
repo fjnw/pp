@@ -72,16 +72,41 @@ header .navbar {
   float: left;
   position: relative;
   font-family: 'Lato'; 
-  font-weight: 700;
+  font-weight: 100;
   text-align: center;
+  transition: linear color 1s;
+  /* transition: linear background .75s; */
   color: white;
   background: black;
+  user-select: none;
 }
 
 .letters:hover {
+  transition: linear .6s;
+    /* transition: background 1s; */
   color: black;
   background: white;
 }
+
+.features-item {
+  max-width: 20rem;
+}
+
+
+
+
+
+
+.card {
+  border: 0px;
+}
+.card-img-top {
+  border-radius: 100% !important;
+}
+
+
+
+
 
 /* home - boxes */
 .box {
