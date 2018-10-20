@@ -50,14 +50,13 @@ body {
 }
 
 .project {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Dosis', sans-serif;
   font-weight: 700;
 }
 .pastel {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Dosis', sans-serif;
   font-weight: 300;
 }
-
 
 .letters {
   width: 20%;
@@ -100,10 +99,8 @@ body {
   transition: .5s;
 }
 
-
-
-
-
+/* credit:  https://codepen.io/jtholloran/ */
+/* https://codepen.io/jtholloran/pen/KyvHb */
 .shelf {
   display: block;
   position: relative;
@@ -187,20 +184,53 @@ body {
   height: 1px;
   background-image: -moz-linear-gradient(0deg, #ffffff 0%, rgba(255, 255, 255, 0.5) 35%, #ffffff 65%, rgba(255, 255, 255, 0.7) 100%);
   /*FF3.6+ */
-
   background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, #ffffff), color-stop(35%, rgba(255, 255, 255, 0.5)), color-stop(65%, #ffffff), color-stop(100%, rgba(255, 255, 255, 0.7)));
   /*Chrome,Safari4+ */
-
   background-image: -webkit-linear-gradient(0deg, #ffffff 0%, rgba(255, 255, 255, 0.5) 35%, #ffffff 65%, rgba(255, 255, 255, 0.7) 100%);
   /* Chrome10+,Safari5.1+ */
-
   background-image: -o-linear-gradient(0deg, #ffffff 0%, rgba(255, 255, 255, 0.5) 35%, #ffffff 65%, rgba(255, 255, 255, 0.7) 100%);
   /* Opera 11.10+ */
-
   background-image: -ms-linear-gradient(0deg, #ffffff 0%, rgba(255, 255, 255, 0.5) 35%, #ffffff 65%, rgba(255, 255, 255, 0.7) 100%);
   /*IE10+ */
-
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(255, 255, 255, 0.7)', endColorstr='#ffffff', GradientType='0' );
   /* IE6-9 */
+}
 
+/* credit:  https://codepen.io/dev_hendrik/ */
+/* https://codepen.io/dev_hendrik/pen/RYOVzP */
+.block {
+  position: relative;
+  background: linear-gradient(0deg, #000, #262626);
+}
+.shadow:before, .shadow:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background-size: 400%;
+  z-index: -1;
+  animation: shadow 20s linear infinite;
+}
+.shadow:after {
+  top: -6px;
+  left: -6px;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  filter: blur(24px);
+  opacity: 0.9;
+}
+
+@keyframes shadow {
+  0% {
+    background-position: 0 0;
+  }
+  50.01% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
