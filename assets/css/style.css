@@ -64,16 +64,15 @@ body {
   font-family: 'Lato'; 
   font-weight: 100;
   text-align: center;
-  transition: linear color 1.5s;
+  transition: linear color 1s;
   /* transition: linear background .75s; */
   color: white;
   background: black;
 }
 .letters:hover {
-  transition: linear .6s;
-    /* transition: background 1s; */
+  transition: linear .4s;
   color: black;
-  background: white;
+  /* background: white; */
 }
 
 .card {
@@ -109,8 +108,9 @@ body {
   left: -2px;
   width: calc(100% + 4px);
   height: calc(100% + 4px);
-  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
-  background-size: 400%;
+  /* background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00); */
+  background: linear-gradient(45deg, #b78fc6, #83afde, #73cc97, #f7ec76, #f67f84, #b78fc6, #83afde, #73cc97, #f7ec76, #f67f84);
+  background-size: 300%;
   z-index: -1;
   animation: shadow 20s linear infinite;
 }
@@ -119,8 +119,8 @@ body {
   left: -6px;
   width: calc(100% + 8px);
   height: calc(100% + 8px);
-  filter: blur(24px);
-  opacity: 0.9;
+  filter: blur(20px);
+  opacity: 1;
 }
 @keyframes shadow {
   0% {
